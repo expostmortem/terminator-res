@@ -1,0 +1,134 @@
+[global_config]
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, Logger, SearchPlugin
+  suppress_multiple_term_dialog = True
+[keybindings]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+    font = Roboto Mono 12
+    foreground_color = "#ffffff"
+    scrollback_infinite = True
+    disable_mousewheel_zoom = True
+    use_system_font = False
+  [[4K]]
+    audible_bell = True
+    cursor_color = "#aaaaaa"
+    font = Roboto Mono 13
+    foreground_color = "#ffffff"
+    scrollback_infinite = True
+    palette = "#000000:#cd0000:#00cd00:#cdcd00:#0000ee:#cd00cd:#00cdcd:#e5e5e5:#7f7f7f:#ff0000:#00ff00:#ffff00:#5c5cff:#ff00ff:#00ffff:#ffffff"
+    use_system_font = False
+  [[1080p or lower]]
+    audible_bell = True
+    cursor_color = "#aaaaaa"
+    font = Roboto Mono 9
+    foreground_color = "#ffffff"
+    scrollback_infinite = True
+    palette = "#000000:#cd0000:#00cd00:#cdcd00:#0000ee:#cd00cd:#00cdcd:#e5e5e5:#7f7f7f:#ff0000:#00ff00:#ffff00:#5c5cff:#ff00ff:#00ffff:#ffffff"
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = 1080p or lower
+  [[1080p]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:0
+      maximised = True
+      fullscreen = False
+      size = 1366, 836
+      title = xp986@ubuntu-portable:~
+      last_active_term = 1695cd3a-a7c2-40b4-b170-35077ba088f7
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 680
+      ratio = 0.4996326230712711
+    [[[child2]]]
+      type = VPaned
+      parent = child1
+      order = 0
+      position = 416
+      ratio = 0.5006016847172082
+    [[[terminal3]]]
+      type = Terminal
+      parent = child2
+      order = 0
+      profile = 1080p or lower
+      uuid = 1695cd3a-a7c2-40b4-b170-35077ba088f7
+    [[[terminal4]]]
+      type = Terminal
+      parent = child2
+      order = 1
+      profile = 1080p or lower
+      uuid = 44be1daf-9ce9-403c-9591-b1cbab4fff02
+    [[[terminal5]]]
+      type = Terminal
+      parent = child1
+      order = 1
+      profile = 1080p or lower
+      uuid = 755ec45a-3b5b-4e29-ad63-4f455eda8091
+  [[4K]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 74:27
+      maximised = True
+      fullscreen = False
+      size = 3766, 2096
+      title = xp986@ubuntu-portable:~
+      last_active_term = c62ec4b0-b482-4564-b9b6-0813528b37f7
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 1880
+      ratio = 0.499867056633874
+    [[[child2]]]
+      type = VPaned
+      parent = child1
+      order = 0
+      position = 1046
+      ratio = 0.5002391200382592
+    [[[terminal3]]]
+      type = Terminal
+      parent = child2
+      order = 0
+      profile = 4K
+      uuid = c62ec4b0-b482-4564-b9b6-0813528b37f7
+    [[[child4]]]
+      type = HPaned
+      parent = child2
+      order = 1
+      position = 938
+      ratio = 0.5002666666666666
+    [[[terminal5]]]
+      type = Terminal
+      parent = child4
+      order = 0
+      profile = 4K
+      uuid = d463b458-17a2-47ac-b770-f4393451db22
+    [[[terminal6]]]
+      type = Terminal
+      parent = child4
+      order = 1
+      profile = 4K
+      uuid = d6f7a439-1247-4ae9-b197-1a82455ccf6e
+    [[[terminal7]]]
+      type = Terminal
+      parent = child1
+      order = 1
+      profile = 4K
+      uuid = 72aa9535-61ea-4c36-bc24-b2bca42e00a2
+[plugins]
